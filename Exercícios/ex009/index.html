@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <h3>Jeito errado</h3>
+    1 - Acordar 
+    2 - Levantar
+    3 - Lavar o rosto
+    <h3>Jeito certo</h3>
+    <ol>
+        <li>estudar</li>
+        <li>Colocar em prática</li>
+        <li>Ensinar</li>
+    </ol>
+    <h3>Outro exemplo</h3>
+    <ol type="a" start="3"> <!--OL: Lista ordenada--> <!--Tipos de type: 1 (Numérica), a (Letra minuscula), A (Letra maiscula), I (Números romanos), i (Números romanos minúscula)-->
+        <li>Acordar</li>
+        <li>Levantar</li>
+        <li>Lavar o rosto</li>
+    </ol> <!--Start: Indica de qual número ou letra ele irá começar. Sempre em número normais, independente do tipo.--> <!--Start é um parametro numérico, ou seja, iremos usar apenas números aqui!-->
+    <h2>Listas não ordenadas</h2>
+    <h3>Jeito errado</h3>
+    - Trabalhar 
+    - Ir ao mercado
+    - Voltar para casa
+    <h3>Jeito certo</h3>
+    <ul>
+        <li>Trabalhar</li>
+        <li>Ir ao mercado</li>
+        <li>Voltar para casa</li>
+    </ul>
+    <h3>Outro exemplo</h3>
+    <ul type="square">
+        <li>Acordar</li>
+        <li>Ir ao mercado</li>
+        <li>Voltar para casa</li>
+    </ul> <!--Tipos da ul: disc, square e circle-->
+    <h2>Juntando listas 1.0</h2>
+    <h3>Exemplo</h3>
+    <h4>Minhas linguagens favoritas</h4>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Delph</li>
+            <li>Clipper</li>
+            <li>Fortan</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="4">
+            <li>PHP</li>
+            <li>Javascript</li>
+            <li>Python</li>
+        </ol>
+    </ol>
+    <h3>Outro exemplo</h3>
+    <h4>Meu jogos favoritos</h4>
+    <ol>
+        <li>PS1</li>
+        <ul>
+            <li>Crash Bandicoot</li>
+        </ul>
+        <li>Xbox 360</li>
+        <ul>
+            <li>PES 2013</li>
+            <li>XBOX Kinect sports</li>
+        </ul>
+        <li>Xbox One</li>
+        <ul>
+            <li>Minecraft</li>
+            <li>GTA V</li>
+            <li>Fifa 19</li>
+        </ul>
+    </ol> <!--Segurando o Alt, é possível colocar vários cursores de mouse na tela.-->
+    <h2>Lista de definição</h2>
+    <dl> <!--dl: Lista de definição-->
+        <dt>HTML</dt> <!--dt: Termo-->
+        <dd>Lingaugem de marcação de texto para a criação de sites.</dd> <!--dd: Descrição.-->
+        <dt>Javascript</dt>
+        <dd>Lingaugem de programação para a criação de interatividade de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação de design de um site.</dd>
+    </dl>
+</body>
+</html>

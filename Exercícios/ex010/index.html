@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o canal do Youtube do <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">Curso em Vídeo</a></p><!--Esse tipo de link é um link externo-->
+    <p>Você também pode acessar o canal do Youtube do <a href="https://www.youtube.com/@manualdomundo"> Manual do Mundo</a></p> <!--a: tag do link  href: Link que irá acessar.--> <!--Target="_blank" e rel="external": Indica para o navegador que quando o link for acessado, ele abra uma nova guia.-->
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Dá para ir à <a href="pag002.html" rel="next">segunda página do site.</a></p>
+    <!--rel="next": link de avanço--> <!--target="_self": Indica que vai abrir o link na mesma aba.  Pode fazer isso ou não colocar nada.-->
+    <h2>Links internos para dentro de uma página</h2>
+    <p>Você pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>
+    <h2>Links para download</h2>
+    <ul>
+        <li><a href="livro/09 - Listas HTML.pdf" download="09 Listas HTML.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/09 - Listas HTML.7z" download="09 - Listas HTML.7z" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>

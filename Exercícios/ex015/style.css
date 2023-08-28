@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body {
+    background-color: skyblue;
+    font-family: Georgia;
+    font-size: 17px;
+  }
+  h1 {
+    color: gray;
+    background-color: whitesmoke;
+  }
+  h2 {
+    color: #0e6dfc;
+  }
+  p {
+    text-align: justify;
+  }

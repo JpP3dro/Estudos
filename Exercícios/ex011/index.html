@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+  <h1>Imagem dinâmica</h1>
+  <p>Tente abrir o site em dispositivos de tamanhos diferentes ou mude o tamanho do seu navegador.</p> 
+  <picture> <!--Explicando o código: Se o tamanho da tela for maior do que 1050px, ele carrega a imagem grande. Se ficar entre 750px e 1050px, ele carrega a imagem medio. E se for menor do que 750px, ele carrega a imagem pequena.--> <!--DEIXE OS SOURCES NA ORDEM CORRETA!-->
+    <source media="(max-width: 750px)" srcset="imagens/pequeno.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/medio.png" type="image/png">
+    <img src="imagens/grande.png" alt="Foto grande"> <!--No max-width, o recomendado é colocar 50px a mais para nunca aparecer a barra de rolagem lateral.--> 
+  </picture> <!--O picture permite colocar várias imagens.-->
+<h1>Reproduzindo aúdio</h1>
+<p>Vamos aprender a reproduzir áudio.</p>
+<audio src="midia/high-noon-tracktribe.mp3" controls autoplay></audio>
+<!--A tag audio é compativel com MP3, WAV e OGG-->
+<h2>Outra maneira de colocar aúdio</h2>
+<audio preload="metadata" autoplay controls loop> <!--preload="metadata": O audio só carrega quando for clicado. loop= Áudio fica em loop.-->
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+</audio>
+<p>Caso seu navegador não consiga reproduzir. <a href="midia/guanacast-33.mp3">Clique aqui para fazer o download.</a></p>
+</body>
+</html>
